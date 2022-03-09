@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="mystyle.css">
+  
+
+    <title>Calculadora IMC</title>
+</head>
+
+<div id = "js">
+    <h1>
+        <div class="typewrite" data-period="2000" data-type='[ "Calcule o seu IMC", "Calcule o seu IMC", "Calcule o seu IMC"]'>
+          <span class="wrap"></span>
+    </h1>      
+</div>
+
+<div class = "principal">  
+    <div id = "Calcular">
+        <h2>Peso (kg)</h2> <input type = "number" id = "peso" name ="peso"> 
+        <h2>Altura (cm)</h2> <input type ="number" id = "altura" name = "altura">
+        <button type ="submit" onclick = "imc()"> Enviar  </button>    
+    <div>
+        <div>
+            <h3>
+                Clique <a href= "https://brasilescola.uol.com.br/educacao-fisica/Indice-massa-corporal-imc.htm">aqui</a> para saber mais sobre o IMC.
+           </h3>
+        </div>
+    
+</div>
+
+
+
+  
+
+  
+<script src="sweetalert2/dist/sweetalert2.min.js"></script>
+<script src = "script.js"></script>
+</body>
+</html>
