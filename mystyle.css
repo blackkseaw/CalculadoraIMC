@@ -1,9 +1,14 @@
-body{
-    background-color:#e6f1f5;
-    text-align: center;
-    padding-top: 10%
- 
+/* Para importar uma ou mais fontes, entra no site Google Fonts.
+Tem que colocar esse @import e o font-family onde tu quiser */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+/* Esse * da estilo ao body e ao html como um todo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 button{
@@ -11,14 +16,35 @@ button{
     color:  #000080;
     padding: 8px;
     border-radius: 10px;
-    
-
-
+    border: #000080 1px solid;
+    font-weight: bold;
 }
 
 input{
     width: 30%;
+    border: #000080 1px solid;
+}
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(121, 151, 250);
+}
+
+.card{
+    width: 90%;
+    max-width: 440px;
+    text-align: center;
+    padding: 50px 35px;
+    background-color:#e6f1f5;
+    border-radius: 16px;
+
+    /* efeito de sombra */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.459);
 }
 
 .principal{
@@ -34,8 +60,8 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-
+    color: #000080;
+    padding-bottom: 10px;
 
 }
 
@@ -43,16 +69,20 @@ input{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
-    margin-bottom: 30%;
+    justify-content: center;
 
+    /* Estabelece um espaço igual entre todos os itens da div */
+    gap: 10px;
 }
 
 a{ 
     color: rgb(26, 23, 23);
+    text-decoration: none;
+    font-weight: bold;
+}
 
-
-
+a:hover{
+    color: #000080;
 }
 
 
@@ -63,10 +93,5 @@ h2{
 }
 
 h1 , h2, h3{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #000080;
-    
-
-
 }
-
